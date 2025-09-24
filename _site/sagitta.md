@@ -1,6 +1,6 @@
 I designed ESP32 and ATSAMD21-based microcontroller boards to replace adafruit feather boards and breakout boards used by the lab in the previous prototype for the Sagitta device 
 
-(Sagitta is a sensor that attaches to wheelchair wheels and collects data on velocity, push length, propulsion power, etc. https://www.clicknpush.ca/sagitta)
+(Sagitta is a sensor that attaches to wheelchair wheels and collects data on velocity, push length, propulsion power, etc. [see here](https://www.clicknpush.ca/sagitta))
 <img src="assets/images/sagitta_layout.png" alt="image of PCB layout">
 
 I designed a few different versions of the board. One was inspired by the Adafruit Feather M0 Basic, and included a separate bluetooth chip nRF51822, so I settled on a design using an ESP32 instead. 
