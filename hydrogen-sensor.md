@@ -1,6 +1,6 @@
 I developed a prototype for a multimodal sensing system to monitor hydrogen concentration in natural gas pipelines. The system integrates ultrasonic and thermal conductivity sensors to determine hydrogen concentration. A machine learning model had been developed (not by me) to improve the accuracy of the results. This was run on a raspberry pi.
 
-[See the project github page](https://github.com/g0r3wh0r3/hydrogen-project)
+[go to the project](https://github.com/g0r3wh0r3/hydrogen-project)
 
 <img src="assets/images/hydrogen_working.png" alt="image of hydrogen system">
 
