@@ -85,22 +85,24 @@ I designed a 3D-printed enclosure in Solidworks for the device. I selected a tou
 
 The enclosure went through a few iterations. I included ventilation holes and a separator between the pipe and the electrical components, features which would be good to have if the device is to be developed further. The enclosure was 3D printed in order to quickly have a physical prototype for demonstration/presentations. 
 
+
+Here is the enclosure printing! I learned more skills with designing parts for 3D printing, and troubleshooting 3D printers.
+
+Here are some photos of me assembling the pipe/sensors. I soldered the wired to each of the sensors, and set them in the pipe fittings filled with epoxy to prevent leaks. 
+
 <img src="assets/images/3d_printing_in_progress.jpg" alt="3d printing in progress">
-
-Here is the enclosure printing! I learned more skills with designing parts for 3D printing, and troubleshooting 3D printers. 
-
+ 
 <img src="assets/images/assembling_sensors.jpg" alt="assembling sensors">
 
 <img src="assets/images/assembling_sensors_2.jpg" alt="assembling sensors">
 
-Here are some photos of me assembling the pipe/sensors. I soldered the wired to each of the sensors, and set them in the pipe fittings filled with epoxy to prevent leaks. The following models I created in Solidworks show more clearly the setup. I soldered wires to the sensors, which were fed through the pipe fittings, connecting to the cable connectors at the other end. Septas and o-rings were used to hold the sensors in place and ensure a good seal, before the pipe fittings were filled with epoxy to seal them. 
+I created some models in SolidWorks that show what's going on more clearly. I soldered wires to the sensors, which were fed through the pipe fittings, connecting to the cable connectors at the other end. Septas and o-rings were used to hold the sensors in place and ensure a good seal, before the pipe fittings were filled with epoxy to seal them. 
 
 <img src="assets/images/sensor_solidworks.png" alt="model of sensor setup">
 
 <img src="assets/images/sensor_solidworks_cross_sec.png" alt="cross-section of sensor setup">
 
 <img src="assets/images/solidworks_pipe_view.png" alt="model showing pipe assembly">
-
 
 # software 
 
@@ -109,8 +111,13 @@ I coded a user interface for the device in Python using Tkinter. The UI had a ho
 <img src="assets/images/screen_w_ui.jpg" alt="screen with ui">
 
 Here is an image of me testing that everything looked good on the touch screen. Here are some screenshots of the other pages of the UI 
+
 <img src="assets/images/ui_home.png" alt="home page">
+
 <img src="assets/images/ui_acq.png" alt="data acquisition page">
+
 <img src="assets/images/ui_acq_2.png" alt="data acquisition 2">
+
 <img src="assets/images/ui_settings.png" alt="settings page">
+
 <img src="assets/images/ui_plot.png" alt="plot page">
