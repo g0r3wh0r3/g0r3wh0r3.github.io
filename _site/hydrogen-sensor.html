@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=e40182d8b2250eefe085295d9f2aa3b1822c392e">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4a12ca5f42fe1b18b9c3e86ca5d801dea38ab0c9">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup theme-color -->
@@ -126,7 +126,7 @@
 
 <p><img src="assets/images/pcb_assembled.png" alt="pcb assembled" /></p>
 
-<p>There were some other issues with the PCB. I didn’t leave enough space between the cable connectors for the cables to actually fit, so I ended up having to solder one of the cable connectors to the bottom of the board instead. I picked up a lot of skills in reworking PCBs, such as cutting traces and making new connections to fix some of the issues with the PCB, and debug the issues with the ADC. I did a lot of troubleshooting and debugging, isolating different parts of the system by moving ICs onto breakout boards and testing on a breadboard.</p>
+<p>There were some other issues with the PCB. I didn’t leave enough space between the cable connectors for the cables to actually fit, so I ended up having to solder one of the cable connectors to the bottom of the board instead. I picked up a lot of skills in reworking PCBs, such as cutting traces and making new connections to fix some of the issues with the PCB and try to debug the issues with the ADC. I did a lot of troubleshooting and debugging, isolating different parts of the system by moving ICs onto breakout boards and testing on a breadboard.</p>
 
 <p><img src="assets/images/breadboard_testing.jpg" alt="breadboard testing" /></p>
 
@@ -135,6 +135,8 @@
 <p><img src="assets/images/pcb_and_pi_rework.jpg" alt="reworked PCB with another ADC" /></p>
 
 <p>I started developing a new version of the PCB that fixes the errors with my design, but unfortunately didn’t have time to finish it. I spaced the cable connectors out more so that all the cables would connect to the same side of the PCB. I also made the 40 pin header for the raspberry pi able to be connected to either side of the PCB, allowing for more flexibility in fitting the pi, PCB, and ribbon cable into the enclosure. I added LEDs for easier debugging. I would’ve liked to have updated the design with a different ADC, and learned more about how to prevent noise on the digital signal traces. I would also have liked to look into alternatives for the PGA460, as it was also a bit difficult to work with and might have been overkill for this project. I would have also liked to have designed a better power scheme, since currently the PCB and sensors draw power from the raspberry pi’s GPIO pins. A raspberry pi 5 can handle it, but if the device were to be used with an older version of raspberry pi, it would be cutting a bit close to the maximum amount of power that the pi is able to supply to peripherals. Having a USB-C connector on the PCB, and have the PCB supply power to the raspberry pi as well might be better, but I was scared to try powering the pi from the PCB.</p>
+
+<p><img src="assets/images/hydrogen_pcb_latest" alt="latest version of hydrogen PCB" /></p>
 
 <h1 id="mechanical">mechanical</h1>
 
@@ -146,15 +148,17 @@
 
 <p>The enclosure went through a few iterations. I included ventilation holes and a separator between the pipe and the electrical components, features which would be good to have if the device is to be developed further. The enclosure was 3D printed in order to quickly have a physical prototype for demonstration/presentations.</p>
 
-<p><img src="assets/images/3d_printing_in_progress.jpg" alt="3d printing in progress" /></p>
-
 <p>Here is the enclosure printing! I learned more skills with designing parts for 3D printing, and troubleshooting 3D printers.</p>
+
+<p>Here are some photos of me assembling the pipe/sensors. I soldered the wired to each of the sensors, and set them in the pipe fittings filled with epoxy to prevent leaks.</p>
+
+<p><img src="assets/images/3d_printing_in_progress.jpg" alt="3d printing in progress" /></p>
 
 <p><img src="assets/images/assembling_sensors.jpg" alt="assembling sensors" /></p>
 
 <p><img src="assets/images/assembling_sensors_2.jpg" alt="assembling sensors" /></p>
 
-<p>Here are some photos of me assembling the pipe/sensors. I soldered the wired to each of the sensors, and set them in the pipe fittings filled with epoxy to prevent leaks. The following models I created in Solidworks show more clearly the setup. I soldered wires to the sensors, which were fed through the pipe fittings, connecting to the cable connectors at the other end. Septas and o-rings were used to hold the sensors in place and ensure a good seal, before the pipe fittings were filled with epoxy to seal them.</p>
+<p>I created some models in SolidWorks that show what’s going on more clearly. I soldered wires to the sensors, which were fed through the pipe fittings, connecting to the cable connectors at the other end. Septas and o-rings were used to hold the sensors in place and ensure a good seal, before the pipe fittings were filled with epoxy to seal them.</p>
 
 <p><img src="assets/images/sensor_solidworks.png" alt="model of sensor setup" /></p>
 
@@ -168,12 +172,17 @@
 
 <p><img src="assets/images/screen_w_ui.jpg" alt="screen with ui" /></p>
 
-<p>Here is an image of me testing that everything looked good on the touch screen. Here are some screenshots of the other pages of the UI 
-<img src="assets/images/ui_home.png" alt="home page" />
-<img src="assets/images/ui_acq.png" alt="data acquisition page" />
-<img src="assets/images/ui_acq_2.png" alt="data acquisition 2" />
-<img src="assets/images/ui_settings.png" alt="settings page" />
-<img src="assets/images/ui_plot.png" alt="plot page" /></p>
+<p>Here is an image of me testing that everything looked good on the touch screen. Here are some screenshots of the other pages of the UI</p>
+
+<p><img src="assets/images/ui_home.png" alt="home page" /></p>
+
+<p><img src="assets/images/ui_acq.png" alt="data acquisition page" /></p>
+
+<p><img src="assets/images/ui_acq_2.png" alt="data acquisition 2" /></p>
+
+<p><img src="assets/images/ui_settings.png" alt="settings page" /></p>
+
+<p><img src="assets/images/ui_plot.png" alt="plot page" /></p>
 
       </section>
     </div>

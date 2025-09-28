@@ -63,7 +63,7 @@ I learned to use the reflow oven at the University of Calgary Makerspace, and as
 
 <img src="assets/images/pcb_assembled.png" alt="pcb assembled">
 
-There were some other issues with the PCB. I didn't leave enough space between the cable connectors for the cables to actually fit, so I ended up having to solder one of the cable connectors to the bottom of the board instead. I picked up a lot of skills in reworking PCBs, such as cutting traces and making new connections to fix some of the issues with the PCB, and debug the issues with the ADC. I did a lot of troubleshooting and debugging, isolating different parts of the system by moving ICs onto breakout boards and testing on a breadboard. 
+There were some other issues with the PCB. I didn't leave enough space between the cable connectors for the cables to actually fit, so I ended up having to solder one of the cable connectors to the bottom of the board instead. I picked up a lot of skills in reworking PCBs, such as cutting traces and making new connections to fix some of the issues with the PCB and try to debug the issues with the ADC. I did a lot of troubleshooting and debugging, isolating different parts of the system by moving ICs onto breakout boards and testing on a breadboard. 
 
 <img src="assets/images/breadboard_testing.jpg" alt="breadboard testing">
 
@@ -71,7 +71,9 @@ After spending way too much time trying to get the ADC working, I attached a sim
 
 <img src="assets/images/pcb_and_pi_rework.jpg" alt="reworked PCB with another ADC">
 
-I started developing a new version of the PCB that fixes the errors with my design, but unfortunately didn't have time to finish it. I spaced the cable connectors out more so that all the cables would connect to the same side of the PCB. I also made the 40 pin header for the raspberry pi able to be connected to either side of the PCB, allowing for more flexibility in fitting the pi, PCB, and ribbon cable into the enclosure. I added LEDs for easier debugging. I would've liked to have updated the design with a different ADC, and learned more about how to prevent noise on the digital signal traces. I would also have liked to look into alternatives for the PGA460, as it was also a bit difficult to work with and might have been overkill for this project. I would have also liked to have designed a better power scheme, since currently the PCB and sensors draw power from the raspberry pi's GPIO pins. A raspberry pi 5 can handle it, but if the device were to be used with an older version of raspberry pi, it would be cutting a bit close to the maximum amount of power that the pi is able to supply to peripherals. Having a USB-C connector on the PCB, and have the PCB supply power to the raspberry pi as well might be better, but I was scared to try powering the pi from the PCB.  
+I started developing a new version of the PCB that fixes the errors with my design, but unfortunately didn't have time to finish it. I spaced the cable connectors out more so that all the cables would connect to the same side of the PCB. I also made the 40 pin header for the raspberry pi able to be connected to either side of the PCB, allowing for more flexibility in fitting the pi, PCB, and ribbon cable into the enclosure. I added LEDs for easier debugging. I would've liked to have updated the design with a different ADC, and learned more about how to prevent noise on the digital signal traces. I would also have liked to look into alternatives for the PGA460, as it was also a bit difficult to work with and might have been overkill for this project. I would have also liked to have designed a better power scheme, since currently the PCB and sensors draw power from the raspberry pi's GPIO pins. A raspberry pi 5 can handle it, but if the device were to be used with an older version of raspberry pi, it would be cutting a bit close to the maximum amount of power that the pi is able to supply to peripherals. Having a USB-C connector on the PCB, and have the PCB supply power to the raspberry pi as well might be better, but I was scared to try powering the pi from the PCB. 
+
+<img src="assets/images/hydrogen_pcb_latest" alt="latest version of hydrogen PCB">
 
 # mechanical 
 
@@ -83,22 +85,24 @@ I designed a 3D-printed enclosure in Solidworks for the device. I selected a tou
 
 The enclosure went through a few iterations. I included ventilation holes and a separator between the pipe and the electrical components, features which would be good to have if the device is to be developed further. The enclosure was 3D printed in order to quickly have a physical prototype for demonstration/presentations. 
 
+
+Here is the enclosure printing! I learned more skills with designing parts for 3D printing, and troubleshooting 3D printers.
+
+Here are some photos of me assembling the pipe/sensors. I soldered the wired to each of the sensors, and set them in the pipe fittings filled with epoxy to prevent leaks. 
+
 <img src="assets/images/3d_printing_in_progress.jpg" alt="3d printing in progress">
-
-Here is the enclosure printing! I learned more skills with designing parts for 3D printing, and troubleshooting 3D printers. 
-
+ 
 <img src="assets/images/assembling_sensors.jpg" alt="assembling sensors">
 
 <img src="assets/images/assembling_sensors_2.jpg" alt="assembling sensors">
 
-Here are some photos of me assembling the pipe/sensors. I soldered the wired to each of the sensors, and set them in the pipe fittings filled with epoxy to prevent leaks. The following models I created in Solidworks show more clearly the setup. I soldered wires to the sensors, which were fed through the pipe fittings, connecting to the cable connectors at the other end. Septas and o-rings were used to hold the sensors in place and ensure a good seal, before the pipe fittings were filled with epoxy to seal them. 
+I created some models in SolidWorks that show what's going on more clearly. I soldered wires to the sensors, which were fed through the pipe fittings, connecting to the cable connectors at the other end. Septas and o-rings were used to hold the sensors in place and ensure a good seal, before the pipe fittings were filled with epoxy to seal them. 
 
 <img src="assets/images/sensor_solidworks.png" alt="model of sensor setup">
 
 <img src="assets/images/sensor_solidworks_cross_sec.png" alt="cross-section of sensor setup">
 
 <img src="assets/images/solidworks_pipe_view.png" alt="model showing pipe assembly">
-
 
 # software 
 
@@ -107,8 +111,13 @@ I coded a user interface for the device in Python using Tkinter. The UI had a ho
 <img src="assets/images/screen_w_ui.jpg" alt="screen with ui">
 
 Here is an image of me testing that everything looked good on the touch screen. Here are some screenshots of the other pages of the UI 
+
 <img src="assets/images/ui_home.png" alt="home page">
+
 <img src="assets/images/ui_acq.png" alt="data acquisition page">
+
 <img src="assets/images/ui_acq_2.png" alt="data acquisition 2">
+
 <img src="assets/images/ui_settings.png" alt="settings page">
+
 <img src="assets/images/ui_plot.png" alt="plot page">
