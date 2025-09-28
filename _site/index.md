@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ '/assets/css/jekyll-theme-hacker.css' | relative_url }}">
 # my portfolio
-hi! take a look at my projects!
+hi! here are a few of the projects I've worked on. take a look! 
 
 ## projects
 - [breath-controlled effects pedal](breath-pedal.md)  
